@@ -45,8 +45,8 @@ export const CTop = styled.div`
     background-image: linear-gradient(${({currentColor}) => renderGradient(currentColor)});
     `
 export const Logo = styled.img`
-    width: 8rem;
-    margin-bottom: 2rem;
+    width: 6rem;
+    margin-bottom: 3rem;
 `
 
 export const CTopText = styled.div`
@@ -58,6 +58,7 @@ export const CTopTitle = styled.h1`
      text-transform: uppercase;
      letter-spacing: 0.1rem;
      margin-bottom: 1rem;
+     margin-top: 5rem;
 `
 
 export const Description = styled.p`
@@ -74,20 +75,21 @@ export const Shoes = styled(motion.div)`
 `
 
 export const ShoeOne = styled(motion.img)`
-     width: 25rem;
+     width: 30rem;
      position: absolute;
-     top: -10rem;
-     right: -10rem;
+     top: -14rem;
+     right: -12rem;
      transition: transform 1s;
 `
 
 export const ShoeTwo = styled(motion.img)`
-     width: 33rem;
+     width: 25rem;
      position: absolute;
-     top: -12rem;
-     right: -12rem;
+     top: -15rem;
+     right: -10rem;
      transition: transform 1s;
 `
+
 export const ShoeThree = styled(motion.img)`
      width: 25rem;
      position: absolute;
@@ -217,7 +219,7 @@ export const Price = styled.div`
         font-size: 2rem;
      }
      span:first-child {
-          font-weight: 300;
+          font-weight: 400;
           text-transform: uppercase;
           margin-right: 1rem;
      }

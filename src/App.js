@@ -25,12 +25,12 @@ const App = () => {
 
     firstShoeAnimation: {
       translateX: -700,
-      rotateZ: 45,
+      rotateZ: -90,
     },
 
     secondShoeAnimation: {
-      translateX: -400,
-      rotateZ: -45,
+      translateX: -700,
+      rotateZ: -90,
     },
   };  
 
@@ -41,17 +41,18 @@ const App = () => {
             <Card>
               <CTop currentColor={currentColor}>
                 <Logo src={Brand} alt='logo'/>
-                <CTopText>
-                  <CTopTitle>React 55</CTopTitle>
-                  <Description>
-                    The Nike React Element 55 SE is a balanced blend of classic design and forward-looking innovation
-                  </Description>
-                </CTopText>
-                <Shoes style={{ x,y,rotateX,rotateY,z:0}}>
-                  <ShoeOne src={Shoe_1} alt='shoe-1' variants={variants} animate={currentColor ===2 ? variants.firstShoeAnimation : variants.default} />
+                <Shoes style={{ x,y,rotateX,rotateY,z:10000}}>
+                  <ShoeOne src={Shoe_1} alt='shoe-1' animate={currentColor ===2 ? variants.firstShoeAnimation : variants.default} variants={variants} />
                   <ShoeTwo src={Shoe_2} alt='shoe-2' animate={currentColor ===1 ? variants.secondShoeAnimation : variants.default} variants={variants}/>
                   {/* <ShoeThree src={Shoe_3} alt='shoeThree' /> */}
                 </Shoes>
+                <CTopText>
+                  <CTopTitle>Nike Air Jordan</CTopTitle>
+                  <Description>
+                  Air Jordan is a line of basketball shoes and athletic clothing produced by American corporation Nike.
+                  </Description>
+                </CTopText>
+                
               </CTop>
               <CardBottom
                 currentColor={currentColor}

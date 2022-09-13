@@ -5,9 +5,9 @@ import { Badge, CBottom, CBottomTitle, Sizes, Stars, Title, SizeTitle, Size, Col
 const CardBottom = ({currentColor, setCurrentColor}) => {
   return (
     <CBottom> 
-        <CBottomTitle>React 55</CBottomTitle>
+        <CBottomTitle>Air Jordan</CBottomTitle>
         <Badge> New </Badge>
-        <Title> Running Collections</Title>
+        <Title> Summer Collection</Title>
         <Stars>
             <i class='fa-solid fa-star'></i>
             <i class='fa-solid fa-star'></i>
@@ -34,7 +34,7 @@ const CardBottom = ({currentColor, setCurrentColor}) => {
 
         <Price currentColor={currentColor}>
             <span>Usd</span>
-            <span> 350,00</span>
+            <span> 350.00</span>
 
         </Price>
     </CBottom>
