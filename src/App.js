@@ -54,7 +54,8 @@ const App = () => {
               </CTop>
               <CardBottom
                 currentColor={currentColor}
-                setCurrentColor={setCurrentColor}/>
+                setCurrentColor={setCurrentColor}
+                />
             </Card>
           </CardWrapper>
         </Container>

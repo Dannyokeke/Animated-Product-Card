@@ -22,6 +22,7 @@ const CardBottom = ({currentColor, setCurrentColor}) => {
                 <span>8</span>
                 <span>9</span>
                 <span>10</span>
+                <span>11</span>
              </Sizes>
         </Size>
         <div className='color'>
@@ -34,7 +35,7 @@ const CardBottom = ({currentColor, setCurrentColor}) => {
 
         <Price currentColor={currentColor}>
             <span>Usd</span>
-            <span> 350.00</span>
+            <span>350.00</span>
 
         </Price>
     </CBottom>

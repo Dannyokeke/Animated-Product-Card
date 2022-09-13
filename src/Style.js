@@ -158,17 +158,18 @@ export const Sizes = styled.div`
      display:flex;
 
      span{
-          font-size: 1.3rem;
-          margin-right: 2.5rem;
+          font-size: 1.5rem;
+          margin-right: 2.3rem;
      }
-     span:nth-child(3) {
+     span:nth-child(5) {
           width: 2rem;
-          height: 2rem;
+          height: 1.8rem;
           background: #25d393;
-          color: #fff;
+          color: #000;
           border-radius: 50%;
           display: grid;
           place-items: center;
+     }
 `
 
 export const ColorTitle = styled.h3`
