@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Card, CardWrapper, Container, CTop, CTopText, CTopTitle, Description, Logo, Wrapper, Shoes, ShoeOne, ShoeTwo, ShoeThree} from './Style';
+import { Card, CardWrapper, Container, CTop, CTopText, CTopTitle, Description, Logo, Wrapper, Shoes, ShoeOne, ShoeTwo,} from './Style';
 import Brand from './assets/nike_logo.png';
 import Shoe_1 from './assets/shoe_1.png';
 import Shoe_2 from './assets/shoe_2.png';
-import Shoe_3 from './assets/shoe_3.png';
 import CardBottom from './components/CardBottom';
 import { useMotionValue, useTransform } from 'framer-motion';
 
@@ -44,7 +43,6 @@ const App = () => {
                 <Shoes style={{ x,y,rotateX,rotateY,z:10000}}>
                   <ShoeOne src={Shoe_1} alt='shoe-1' animate={currentColor ===2 ? variants.firstShoeAnimation : variants.default} variants={variants} />
                   <ShoeTwo src={Shoe_2} alt='shoe-2' animate={currentColor ===1 ? variants.secondShoeAnimation : variants.default} variants={variants}/>
-                  {/* <ShoeThree src={Shoe_3} alt='shoeThree' /> */}
                 </Shoes>
                 <CTopText>
                   <CTopTitle>Nike Air Jordan</CTopTitle>

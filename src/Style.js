@@ -189,13 +189,13 @@ export const Colors = styled.div`
      }
 
      .color-1 {
-          background: #1c477a;
+          background: #87ceeb;
           margin-right: 1.5rem;
           box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
      }
 
      .color-2 {
-          background: #a8e063;
+          background: #808080;
           box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
      }
 `
@@ -203,7 +203,7 @@ export const Colors = styled.div`
 export const Price = styled.div`
      width: 16rem;
      height: 4rem;
-     background: ${({ currentColor}) => currentColor === 1 ? '#1c477a' : '#a8e063' };
+     background: ${({ currentColor}) => currentColor === 1 ? '#87ceeb' : '#808080' };
      color: #fff;
      border-radius: 0.5rem;   
      position: absolute;
