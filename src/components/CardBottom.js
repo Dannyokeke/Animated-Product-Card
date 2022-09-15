@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Badge, CBottom, CBottomTitle, Sizes, Stars, Title, SizeTitle, Size, ColorTitle, Colors, Price} from '../Style'
 
 
 const CardBottom = ({currentColor, setCurrentColor}) => {
-  return (
+  
+const [greenBackground, setGreenBackground] = useState(false)
+const heTouchedMe = () =>{ setGreenBackground(!greenBackground)
+  }
+
+  
+    return (
     <CBottom> 
         <CBottomTitle>Air Jordan</CBottomTitle>
         <Badge> New </Badge>
@@ -18,11 +24,11 @@ const CardBottom = ({currentColor, setCurrentColor}) => {
         <Size>
             <SizeTitle>Size</SizeTitle>
              <Sizes>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-                <span>11</span>
+                <span onClick={heTouchedMe} className={greenBackground? 'green' : 'white'}>7</span>
+                <span onClick={heTouchedMe} className={greenBackground? 'green' : 'white'}>8</span>
+                <span onClick={heTouchedMe} className={greenBackground? 'green' : 'white'}>9</span>
+                <span onClick={heTouchedMe} className={greenBackground? 'green' : 'white'}>10</span>
+                <span onClick={heTouchedMe} className={greenBackground? 'green' : 'white'}>11</span>
              </Sizes>
         </Size>
         <div className='color'>
